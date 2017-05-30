@@ -51,7 +51,7 @@
     "ts-jest": "^19.0.0",
     "ts-node": "^3.0.2",
     "tslint": "^4.5.1",
-    "typescript": "^2.3.2",
+    "typescript": "^2.3.4",
     "typings": "^2.0.0",
     "winston": "^2.3.1",
     "winston-papertrail": "^1.0.4",

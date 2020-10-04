@@ -16,6 +16,7 @@ export async function canUserWriteToRepo(token: string, user: string, repoSlug: 
  * Returns either the contents or nothing.
  */
 export async function getGitHubFileContents(token: string | null, repoSlug: string, path: string, ref: string | null) {
+  console.log("token:" + token)
   const refString = ref ? `ref=${ref}` : ""
   const res = await api(token, `repos/${repoSlug}/contents/${path}?${refString}`)
   const data = await res.json()

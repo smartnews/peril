@@ -26,7 +26,7 @@ export async function getTemporaryAccessTokenForInstallation(installationID: num
 }
 
 export function requestAccessTokenForInstallation(installationID: number) {
-  const url = `https://api.github.com/installations/${installationID}/access_tokens`
+  const url = `https://api.github.com/app/installations/${installationID}/access_tokens`
   const headers = {
     Accept: "application/vnd.github.machine-man-preview+json",
     Authorization: `Bearer ${jwtForGitHubAuth()}`,
